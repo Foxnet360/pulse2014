@@ -7,6 +7,8 @@
 		url('../fonts/icomoon.svg?-vmvxrf#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
+
+
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -42,28 +44,41 @@
 .icon-bicho:before {
 	content: "\e604";
 	text-decoration: none;
+	
 }
+
 .icon-estrella_on:before {
 	content: "\e605";
 	text-decoration: none;
+
+
 }
 .icon-estrella_off:before {
 	content: "\e606";
 	text-decoration: none;
+	
 }
 .icon-punto_mas:before {
 	content: "\e607";
 	text-decoration: none;
+	
 }
 .icon-punto_menos:before {
 	content: "\e608";
 	text-decoration: none;
+	
 }
+
 
 a{
 	color:#22bce0;
 	text-decoration: none;
 }
+aside{
+	display: none;
+}
+
+
 body
 {
 	background: #EEEEEE;
@@ -112,8 +127,19 @@ header
 header figure 
 {
 	float: left;
+	
 
 }
+header #logo img{
+	transition:1.5s;
+}
+
+header #logo img:hover{
+	
+	transform:scale(1.5);
+
+}
+
 
 header h1
 {
@@ -141,6 +167,12 @@ header #logo img
 	padding-right: 0.5em;
 	width: 52px;
 } 
+header #logo img:hover{
+	transform: scale(1.2);
+	
+	
+
+}
 nav
 {
 	background:#80bca3;
@@ -153,7 +185,7 @@ nav ul
 {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 0 6em 0 0;
 }
 nav ul #publicar_nav
 {
@@ -174,16 +206,31 @@ nav ul  #publicar_nav a
 nav	ul li 
 {
 	display: inline-block;
-	margin: 0 1em 0 0;
+	margin: 0 1em 0 1em;
+	
 
 }
+
 nav	ul li a
 {
 	color: white;
 	display: block;
 	padding: 0.5em 0;
 	text-decoration: none;
+	transition:1s;
+
 }
+
+nav	ul li:hover{
+	background: #343b54;
+}
+
+
+nav	ul li a #publicar{
+	margin: 0px 5px 0px 3em;
+	font-family: sans-serif;
+}
+
 #contenido
 {
 	margin:1em;
@@ -262,3 +309,55 @@ nav	ul li a
 {
 	float: right;
 }
+
+#contenido .item .votacion .guardar_item{
+	color:yellow;
+}
+
+#contenido .item .votacion .comentarios_item {
+	color:green;
+}
+#contenido .item .votacion .down {
+	color:red;
+}
+#contenido .item .votacion .up {
+	color:red;
+}
+
+@media screen and (max-width: 800px){
+	
+
+	#contenido{
+		overflow: hidden;
+		padding-bottom: 3em;
+	}
+	#contenido .item{
+		width: 45%;
+		margin-left: 1em;
+		float: left;
+	}
+	#contenido .item .votacion{
+		width: 93%;
+		
+	}
+	#contenido .item .imagen_item{
+		text-align: center;
+		float: none;
+	}
+
+}
+
+@media screen and (min-width: 800px){
+	aside{
+	display: block;
+	text-align: center;
+	margin-top: 2em;
+	}
+	aside video{
+	border: 1px solid black;
+	}
+
+}
+
+
+
